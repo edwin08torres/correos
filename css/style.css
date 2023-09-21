@@ -228,8 +228,9 @@ h6 {
     color: #fff;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    height: 2rem;
+    min-height: 2rem;
     width: 65%;
     font-family: 'Azeret Mono', monospace;
     border-radius: 5px;
