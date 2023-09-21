@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.main .formulario form div input {
+    all: unset;
+}
+
+.main {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.main .formulario {
+    min-width: 16rem;
+    max-width: 35rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #131212;
+    border: .1px solid #ccc;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+.main .formulario h1 {
+    border-bottom: .1px solid #ccc;
+    width: 100%;
+    color: #ccc;
+    text-align: center;
+    padding: .8rem 0;
+    text-transform: uppercase;
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 700;
+}
+
+.main .formulario span {
+    color: #c68f05;
+}
+
+.main .formulario form {
+    margin-top: 1rem;
+    width: 100%;
+    min-height: 34rem;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    justify-content: space-around;
+}
+
+.main .formulario form div {
+    position: relative;
+}
+
+.main .formulario form div input {
+    min-width: 15.6rem;
+    max-width: 40rem;
+    width: 90%;
+    height: 2.5rem;
+    padding-left: 2%;
+    border: none;
+    border-bottom: .1px solid #ccc;
+    transition: background-color .3s ease-in;
+    color: #fff;
+}
+
+.main .formulario form .label input:focus+label,
+.main .formulario form .label input:not(:placeholder-shown) + label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #c68f05;
+}
+
+.main .formulario form div label {
+    align-self: flex-start;
+    margin-bottom: 1%;
+    color: #ccc;
+    position: absolute;
+    transition: transform .5s, color .3s;
+    transform: translateY(10px);
+    left: 0;
+}
+
+
+.main .formulario form .mensaje{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7rem;
+}
+.main .formulario form div textarea {
+    width: 92%;
+    height: 8rem;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+.main .formulario form div .mensaje {
+    position: static;
+}
+
+.main .formulario .btn {
+    border: none;
+    color: #fff;
+    width: 70%;
+    gap: 1rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+}
+
+.main .formulario .btn .btn-enviar {
+    border: none;
+    width: 50%;
+    height: 2.5rem;
+    color: #fff;
+    background-color: #c68f05;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+.main .formulario .btn .btn-reset {
+    border: none;
+    width: 50%;
+    height: 2.5rem;
+    color: #fff;
+    background-color: #052fc6;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+.opacity{
+    opacity: 50%;
+}
+
+.alerta{
+    width: 90%;
+    color: #fff;
+    background-color: red;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.spinner {
+    display: flex;
+}
+
+#spinner{
+    margin-bottom: .8rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.exito{
+    background-color: #052fc6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 65%;
+    font-family: 'Azeret Mono', monospace;
+    border-radius: 5px;
+}
+

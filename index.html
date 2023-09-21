@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="formulario">
+        <h1>Simulador de <span>correo</span></h1>
+        <form id="formulario">
+          <div class="de label">
+            <input
+              class="mail-input"
+              type="email"
+              id="de"
+              name="de"
+              placeholder=" "
+            />
+            <label class="email-label accion" for="email">De</label>
+          </div>
+          <div class="para label">
+            <input
+              class="email-input"
+              type="email"
+              id="para"
+              name="para"
+              placeholder=" "
+            />
+            <label class="email-label accion" for="email">Para</label>
+          </div>
+          <div class="cc label">
+            <input
+              class="email-input"
+              type="email"
+              id="cc"
+              name="cc"
+              placeholder=" "
+            />
+            <label class="email-label accion" for="email">CC:</label>
+          </div>
+          <div class="asunto label">
+            <input
+              class="asunto-input"
+              type="text"
+              id="asunto"
+              name="asunto"
+              placeholder=" "
+            />
+            <label class="asunto-label accion" for="email">Asunto:</label>
+          </div>
+          <div class="mensaje label">
+            <label class="mensaje accion" for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+          </div>
+
+          <div class="btn">
+            <button type="submit" class="btn-enviar opacity" disabled>
+              Enviar
+            </button>
+            <button class="btn-reset">Reset</button>
+          </div>
+        </form>
+        <div id="spinner" class="spinner hidden" class="hidden justify-center mt-10">
+          <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
