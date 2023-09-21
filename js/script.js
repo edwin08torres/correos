@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   // console.log(email);
   function comprobarEmail() {
-    console.log(email);
+    // console.log(email);
     if (Object.values(email).includes("")) {
       btnEnviar.classList.add("opacity");
       btnEnviar.disabled = true;
